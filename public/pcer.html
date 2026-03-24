@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maskiner</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="start">Hjemmeside</a>
+        </nav>
+    </header>
+
+    <div>
+        <h1>Registrer maskin</h1>
+        <input id="maskinNavn" type="text" placeholder="Maskin navn">
+        <input id="serienummer" type="text" placeholder="Serienummer">
+        <button onclick="regMaskin()">Registrer ny maskin</button>
+        <p id="regStatus"></p>
+    </div>
+
+    <div>
+        <h1>Liste over registrerte maskiner</h1>
+        <div>
+            <p id="maskinDiv"></p>
+        </div>
+        <button onclick="listMaskin()">Hent liste av maskiner</button>
+    </div>
+    <script src="frontend/maskin.js"></script>
+</body>
+</html>
